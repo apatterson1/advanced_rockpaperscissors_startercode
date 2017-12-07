@@ -3,13 +3,8 @@
         // Write HTML for your project
 //Class 2: 
         // Declare four global variables for intial state of the list of choices, the computer choice, the user choice, and the winner.  
-var userChoice ="";
-var computerChoice ="";
-var winner ="";
-var choices = ["rock", "paper", "scissors"];
         // Practice using console.log() and debugger to debug your code
         // Create your document ready function. 
-                document.ready();
         // Create a click hander for when the "Shoot!" button is clicked, takes in the user choice from the input field, 
         // Display the user choice to the output screen
 //Class 3:  
@@ -24,12 +19,18 @@ var choices = ["rock", "paper", "scissors"];
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-
+var userChoice ="";
+var computerChoice ="";
+var winner ="";
+var choices = ["rock", "paper", "scissors"];
 
 
 //FUNCTIONS
+        $("#button").click(function(){
 
+                 $(".user").val("userChoice");
+});
 
 
 // DOCUMENT READY FUNCTION
-
+                document.ready();
