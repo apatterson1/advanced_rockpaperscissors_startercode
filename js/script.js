@@ -17,7 +17,7 @@
 // *************************** YOUR CODE BELOW *******************************
 //******************TEST EARLY AND OFTEN USING console.log() ******************
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
-
+$( document ).ready(function() {
 //GLOBAL VARIABLES
 var userChoice ="";
 var computerChoice ="";
@@ -26,11 +26,16 @@ var choices = ["rock", "paper", "scissors"];
 
 
 //FUNCTIONS
-        $("#button").click(function(){
-
-                 $(".user").val("userChoice");
+$("#button").click(function(){
+      userChoice = $("#entry").val();
+      console.log(userChoice);
+      $(".user").text(userChoice);
+      
+      var random = Math.floor(Math.random()*choices.length);
+        computerChoice = choices[random];
+         console.log(computerChoice);
+        $(".computer").text(computerChoice);
 });
 
-
 // DOCUMENT READY FUNCTION
-                document.ready();
+});
